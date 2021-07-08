@@ -41,14 +41,14 @@ def prepare_data(X_train, y_train, X_test, y_test, num_classes):
 
 def create_model():
     model = Sequential()
-    model.add(Conv2D(filters=32, kernel_size=(3, 3), input_shape=(32, 32, 3), activation='relu'))
-    model.add(Conv2D(filters=32, kernel_size=(3, 3), activation='relu'))
+    model.add(Conv2D(filters=64, kernel_size=(3, 3), input_shape=(32, 32, 3), activation='relu'))
+    model.add(Conv2D(filters=64, kernel_size=(3, 3), activation='relu'))
     model.add(BatchNormalization())
     model.add(MaxPool2D(pool_size=(2, 2), strides=2))
     model.add(Dropout(0.3))
 
-    model.add(Conv2D(filters=64, kernel_size=(3, 3), activation='relu'))
-    model.add(Conv2D(filters=64, kernel_size=(3, 3), activation='relu'))
+    model.add(Conv2D(filters=128, kernel_size=(3, 3), activation='relu'))
+    model.add(Conv2D(filters=128, kernel_size=(3, 3), activation='relu'))
     model.add(BatchNormalization())
     model.add(MaxPool2D(pool_size=(2, 2), strides=2))
     model.add(Dropout(0.3))
@@ -85,10 +85,10 @@ if __name__ == '__main__':
     (X_train, y_train), (X_test, y_test) = cifar10.load_data()
     num_classes = 10
     classes_names = ['Airplane', 'Automobile', 'Bird', 'Cat', 'Deer', 'Dog', 'Frog', 'Horse', 'Ship', 'Truck']
-    plot_classes(X_train, y_train, num_classes, classes_names)
+    # plot_classes(X_train, y_train, num_classes, classes_names)
     X_train, y_train, X_test, y_test = prepare_data(X_train, y_train, X_test, y_test, num_classes)
     cnn = create_model()
     cnn.compile(optimizer='adam', loss='categorical_crossentropy', metrics=['accuracy'])
-    history = cnn.fit(X_train, y_train, epochs=30, batch_size=32, verbose=1, validation_data=(X_test, y_test))
+    history = cnn.fit(X_train, y_train, epochs=50, batch_size=32, verbose=1, validation_data=(X_test, y_test))
     make_plots(history)
-    cnn.summary()
+    # cnn.summary()
