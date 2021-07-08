@@ -49,9 +49,10 @@ def create_model():
 
     model.add(Conv2D(filters=128, kernel_size=(3, 3), activation='relu'))
     model.add(Conv2D(filters=128, kernel_size=(3, 3), activation='relu'))
+    model.add(Conv2D(filters=128, kernel_size=(3, 3), activation='relu'))
     model.add(BatchNormalization())
     model.add(MaxPool2D(pool_size=(2, 2), strides=2))
-    model.add(Dropout(0.3))
+    model.add(Dropout(0.5))
     model.add(Flatten())
 
     model.add(Dense(512, activation='relu'))
@@ -90,5 +91,6 @@ if __name__ == '__main__':
     cnn = create_model()
     cnn.compile(optimizer='adam', loss='categorical_crossentropy', metrics=['accuracy'])
     history = cnn.fit(X_train, y_train, epochs=50, batch_size=32, verbose=1, validation_data=(X_test, y_test))
+    cnn.evaluate(X_test, y_test)
     make_plots(history)
-    # cnn.summary()
+    cnn.summary()
