@@ -4,9 +4,9 @@ The categories are: airplane, automobile, bird, cat, deer, dog, frog, horse, shi
 # An example of each category:  
 ![image](https://user-images.githubusercontent.com/72389636/124950678-ecb12e80-e012-11eb-9ab3-7d412bfb452a.png)  
 # Neural network's structure:  
-![image](https://user-images.githubusercontent.com/72389636/124950587-d73c0480-e012-11eb-825c-609f2c15bdc0.png)  
+2x Conv2D, BatchNormalization, MaxPool2D, Dropout -> 2x Conv2D, BatchNormalization, MaxPool2D, Dropout, Flatten -> Dense, Dropout, Dense  
 # Neural network's score and loss after each epoch:  
-![image](https://user-images.githubusercontent.com/72389636/124950474-bb386300-e012-11eb-9139-3a70adfa1db8.png)  
+![image](https://user-images.githubusercontent.com/72389636/124956375-351f1b00-e018-11eb-946c-e46dc53d9fe2.png)  
 # Requirements:  
 ```tensorflow==2.5.0```  
 ```matplotlib==3.4.1```  
