@@ -8,7 +8,7 @@ The categories are: airplane, automobile, bird, cat, deer, dog, frog, horse, shi
 ![image](https://user-images.githubusercontent.com/72389636/126074335-e0b7f6d1-c37e-45da-b6ee-f692557aaef3.png)  
 # Neural network's score and loss after each epoch:  
 ![image](https://user-images.githubusercontent.com/72389636/126074272-9b13deb9-2cd2-4e54-9423-e9f63dd510d3.png)  
-```Best achieved accuracy on the test set was 87%```  
+```The best achieved accuracy on the test set was 87%```  
 # Requirements:  
 ```tensorflow==2.5.0```  
 ```matplotlib==3.4.1```  
