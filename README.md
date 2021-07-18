@@ -4,7 +4,8 @@ The categories are: airplane, automobile, bird, cat, deer, dog, frog, horse, shi
 # An example of each category:  
 ![image](https://user-images.githubusercontent.com/72389636/124950678-ecb12e80-e012-11eb-9ab3-7d412bfb452a.png)  
 # Neural network's structure:  
-![image](https://user-images.githubusercontent.com/72389636/126071949-056a2122-ddb0-463d-b81b-2bd8f8b1e4e8.png)  
+![image](https://user-images.githubusercontent.com/72389636/126074319-2031c6ee-3271-4ded-9db0-cc914268b3f6.png)  
+![image](https://user-images.githubusercontent.com/72389636/126074335-e0b7f6d1-c37e-45da-b6ee-f692557aaef3.png)  
 # Neural network's score and loss after each epoch:  
 ![image](https://user-images.githubusercontent.com/72389636/126074272-9b13deb9-2cd2-4e54-9423-e9f63dd510d3.png)  
 ```Best achieved accuracy on the test set was 87%```  
