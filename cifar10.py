@@ -102,7 +102,7 @@ if __name__ == '__main__':
     # plot_classes(X_train, y_train, num_classes, classes_names)
     X_train, y_train, X_test, y_test = prepare_data(X_train, y_train, X_test, y_test, num_classes)
     cnn = create_model()
-    history = cnn.fit(X_train, y_train, epochs=75, batch_size=64, verbose=1, validation_data=(X_test, y_test))
+    history = cnn.fit(X_train, y_train, epochs=100, batch_size=64, verbose=1, validation_data=(X_test, y_test))
     cnn.evaluate(X_test, y_test)
     make_plots(history)
     cnn.summary()
