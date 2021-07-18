@@ -6,7 +6,7 @@ The categories are: airplane, automobile, bird, cat, deer, dog, frog, horse, shi
 # Neural network's structure:  
 ![image](https://user-images.githubusercontent.com/72389636/124961327-9a293f80-e01d-11eb-8742-5e5b2dcd3c24.png)  
 # Neural network's score and loss after each epoch:  
-![image](https://user-images.githubusercontent.com/72389636/124961279-8bdb2380-e01d-11eb-95af-628c585c0420.png)   
+![image](https://user-images.githubusercontent.com/72389636/126071884-5a51db63-2e09-43da-bd0f-ade902bb81b9.png)   
 ```Best achieved accuracy on the test set was 85%```  
 # Requirements:  
 ```tensorflow==2.5.0```  
